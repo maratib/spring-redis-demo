@@ -68,7 +68,7 @@ spring:
 
 ---
 
-# 3️⃣ **Redis Caching Strategies — In-Depth + Code**
+# 3️⃣ **Redis Caching Strategies**
 
 ## 🔥 1. **Read-Through Cache (Lazy Loading)**
 
