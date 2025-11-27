@@ -1,0 +1,16 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-App<spring-redis>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.mak.redis.App",
+      "projectName": "spring-redis",
+      "args": "--spring.profiles.active=dev",
+      "envFile": "${workspaceFolder}/.env",
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart"
+    }
+  ]
+}

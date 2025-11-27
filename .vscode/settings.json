@@ -1,0 +1,15 @@
+{
+  "java.compile.nullAnalysis.mode": "automatic",
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "testing.automaticallyOpenTestResults": "neverOpen",
+  "java.test.config": [
+    {
+      "name": "MyCustomTestConfig",
+      "vmArgs": [
+        "-Xshare:off",
+        "-javaagent:${userHome}/.m2/repository/org/mockito/mockito-core/5.20.0/mockito-core-5.20.0.jar"
+      ]
+    }
+  ]
+  // "java.test.defaultConfig": "MyCustomTestConfig"
+}

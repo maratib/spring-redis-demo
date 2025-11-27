@@ -1,0 +1,34 @@
+server:
+  port: 8080
+  # servlet:
+  #   context-path: /api
+
+spring:
+  application:
+    name: spring-redis
+  main:
+    banner-mode: off
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+  cache:
+    type: redis
+    redis:
+      time-to-live: 60000
+
+logging:
+  pattern:
+    file: "%d{dd-MM HH:mm} - %-5level - %logger{1} - %msg%n"
+  file:
+    name: logs/app.log
+  level:
+    root: WARN
+    org:
+      hibernate: error
+      springframework:
+        test: WARN
+        boot: WARN
+    com:
+      mak: INFO
